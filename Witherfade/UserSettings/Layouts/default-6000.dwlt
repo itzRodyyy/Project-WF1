@@ -1176,9 +1176,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -27.96256, y: -0.67248845, z: -26.404562}
+    m_Target: {x: 1.3315874, y: 4.828839, z: -0.6914946}
     speed: 2
-    m_Value: {x: -27.96256, y: -0.67248845, z: -26.404562}
+    m_Value: {x: 1.3315874, y: 4.828839, z: -0.6914946}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1224,13 +1224,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3970259, y: -0.16874285, z: 0.074488424, w: 0.8991441}
+    m_Target: {x: -0.030309068, y: 0.90133846, z: -0.06392982, w: -0.4273082}
     speed: 2
-    m_Value: {x: 0.39692894, y: -0.1696324, z: 0.07488122, w: 0.8989244}
+    m_Value: {x: -0.030308934, y: 0.90133446, z: -0.063929535, w: -0.42730632}
   m_Size:
-    m_Target: 9.495166
+    m_Target: 9.399129
     speed: 2
-    m_Value: 9.942582
+    m_Value: 9.399129
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1465,11 +1465,10 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: -5776
+      - m_Data: 35554
       m_LastClickedID:
-        m_Data: -5776
+        m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -23924
       - m_Data: -1288
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1545,7 +1544,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/Player Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1555,7 +1554,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/Player Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\rodyc\source\repos\Project-WF1\Witherfade
   m_LockTracker:
@@ -1564,15 +1563,13 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 35490
+    - m_Data: 35548
     m_LastClickedID:
-      m_Data: 35490
+      m_Data: 35548
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 35354
-    - m_Data: 35558
-    - m_Data: 35676
-    - m_Data: 35686
+    - m_Data: 35418
+    - m_Data: 35536
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1606,7 +1603,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 35354
+    - m_Data: 35418
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1634,14 +1631,14 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -5776
-    m_LastClickedInstanceID: -5776
-    m_HadKeyboardFocusLastEvent: 0
+    - m_Data: 35554
+    m_LastClickedInstanceID: 35554
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: movement
+      m_OriginalName: movement
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1649,10 +1646,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 0
+        m_Data: 35554
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
