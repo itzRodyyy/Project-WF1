@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6222116213900508545}
   - component: {fileID: 7045026982962900289}
   - component: {fileID: 2153402727159155351}
+  - component: {fileID: 4437382779423944708}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -92,6 +93,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5173463157463044391}
   m_Enabled: 1
+--- !u!114 &4437382779423944708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173463157463044391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ffcf1ee829e864386445dec7925e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::camera
+  sens: 360
+  lockVertMin: -90
+  lockVertMax: 90
+  invertY: 0
 --- !u!1 &6408338844908607810
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +121,8 @@ GameObject:
   - component: {fileID: 2762890016172104469}
   - component: {fileID: 3597698468219709682}
   - component: {fileID: 2302131749897273785}
+  - component: {fileID: 2402689268719757916}
+  - component: {fileID: 381883346472684509}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -119,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6408338844908607810}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.15398908, z: -0, w: 0.9880725}
+  m_LocalRotation: {x: 0, y: -0.15398604, z: 0, w: 0.988073}
   m_LocalPosition: {x: -24.88875, y: 1, z: -22.13002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -206,4 +225,47 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2402689268719757916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408338844908607810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5ae34ea7bccc341a41edd80076acaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::movement
+  moveSpeed: 5
+  jumpPower: 10
+  gravity: 30
+  standHeight: 1.75
+  crouchHeight: 1
+  player: {fileID: 381883346472684509}
+--- !u!143 &381883346472684509
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408338844908607810}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
