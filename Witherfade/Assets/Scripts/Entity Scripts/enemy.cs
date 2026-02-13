@@ -24,6 +24,7 @@ public class enemy : MonoBehaviour, damageInterface
         StartCoroutine(flashRed());
         if (HP <= 0)
         {
+            gameManager.instance.updateGameGoal(-1);
             Destroy(gameObject);
         }
     }
@@ -33,6 +34,7 @@ public class enemy : MonoBehaviour, damageInterface
     {
         colorOrig = model.material.color;
         agent.stoppingDistance = attackRange;
+        gameManager.instance.updateGameGoal(1);
     }
 
     // Update is called once per frame

@@ -4,6 +4,9 @@ public class gameManager : MonoBehaviour
 {
     static public gameManager instance;
     public GameObject player;
+    public combat playerCombat;
+    public movement playerMovement;
+    public int gameGoalCount;
 
     float timeScaleOriginal;
 
@@ -13,6 +16,8 @@ public class gameManager : MonoBehaviour
     {
         instance = this;
         player = GameObject.FindWithTag("Player");
+        playerCombat = player.GetComponent<combat>();
+        playerMovement = player.GetComponent<movement>();
         timeScaleOriginal = Time.timeScale;
     }
     void Start()
@@ -37,5 +42,15 @@ public class gameManager : MonoBehaviour
         Time.timeScale = timeScaleOriginal;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void updateGameGoal(int amount)
+    {
+        gameGoalCount += amount;
+        if (gameGoalCount <= 0)
+        {
+            statePause();
+            UIManager.instance.openWinMenu();
+        }
     }
 }

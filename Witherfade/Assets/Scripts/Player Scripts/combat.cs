@@ -48,11 +48,12 @@ public class combat : MonoBehaviour, damageInterface
     public void TakeDamage(int damage)
     {
         health -= damage;
+        UIManager.instance.UpdateHealthBar();
         if (health <= 0)
         {
             health = 0;
             gameManager.instance.statePause();
-            Debug.Log("You Died!");
+            UIManager.instance.openDiedMenu();
         }
     }
 }
