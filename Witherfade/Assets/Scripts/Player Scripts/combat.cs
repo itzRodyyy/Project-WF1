@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class combat : MonoBehaviour, damageInterface
@@ -35,6 +36,11 @@ public class combat : MonoBehaviour, damageInterface
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDist, ~ignoreLayer))
             {
                 Debug.Log("HIT! Victim: " + hit.collider.name);
+                damageInterface victim = hit.collider.GetComponent<damageInterface>();
+                if (victim != null)
+                {
+                    victim.TakeDamage(shootDamage);
+                }
             }
         }
     }
@@ -42,5 +48,11 @@ public class combat : MonoBehaviour, damageInterface
     public void TakeDamage(int damage)
     {
         health -= damage;
+        if (health <= 0)
+        {
+            health = 0;
+            gameManager.instance.statePause();
+            Debug.Log("You Died!");
+        }
     }
 }
