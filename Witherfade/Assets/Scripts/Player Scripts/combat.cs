@@ -4,9 +4,9 @@ using UnityEngine;
 public class combat : MonoBehaviour, damageInterface
 {
     [Range(1, 10)]public int maxHealth;
-    [Range(1, 10)][SerializeField] int shootDamage;
-    [Range(1, 50)][SerializeField] int shootDist;
-    [Range(0, 2)][SerializeField] float shootRate;
+    [Range(1, 10)]public int shootDamage;
+    [Range(1, 50)]public int shootDist;
+    [Range(0, 2)]public float shootRate;
     [SerializeField] LayerMask ignoreLayer;
 
     float shootTimer;
