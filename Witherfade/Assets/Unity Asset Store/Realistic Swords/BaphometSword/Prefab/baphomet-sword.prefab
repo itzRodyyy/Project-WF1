@@ -129,6 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   type: 1
   HPGain: 0
-  weaponDmg: 3
-  weaponRange: 5
-  attackRate: 0.25
+  weapon: {fileID: 11400000, guid: 913f1f784438e254794ac2731b0dd58a, type: 2}

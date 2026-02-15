@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     [Header("== Menus ==")]
     [SerializeField] GameObject winMenu;
     [SerializeField] GameObject diedMenu;
+    [SerializeField] GameObject inventory;
 
     public static UIManager instance;
     public GameObject activeMenu;
@@ -27,7 +28,10 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Cancel") && activeMenu == inventory)
+        {
+            closeMenu();
+        }
     }
 
     public void UpdateHealthBar()
@@ -42,6 +46,8 @@ public class UIManager : MonoBehaviour
         {
             activeMenu.SetActive(false);
             activeMenu = null;
+            ToggleHUD();
+            gameManager.instance.stateUnpause();
         }
     }
 
@@ -65,5 +71,14 @@ public class UIManager : MonoBehaviour
     {
         hudActive = !hudActive;
         HUD.SetActive(hudActive);
+    }
+
+    public void openInventory()
+    {
+        gameManager.instance.statePause();
+        closeMenu();
+        ToggleHUD();
+        activeMenu = inventory;
+        activeMenu.SetActive(true);
     }
 }

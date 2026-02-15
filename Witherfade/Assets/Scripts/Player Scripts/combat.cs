@@ -7,6 +7,7 @@ public class combat : MonoBehaviour, damageInterface
     [Range(1, 10)]public int shootDamage;
     [Range(1, 50)]public int shootDist;
     [Range(0, 2)]public float shootRate;
+    public GameObject model;
     [SerializeField] LayerMask ignoreLayer;
 
     float shootTimer;
@@ -55,5 +56,31 @@ public class combat : MonoBehaviour, damageInterface
             gameManager.instance.statePause();
             UIManager.instance.openDiedMenu();
         }
+    }
+
+    public void Equip(Weapon weapon)
+    {
+        shootDamage = weapon.weaponDmg; // Set Damage to Weapon Damage
+        shootDist = weapon.weaponRange; // Set Range to Weapon Range
+        shootRate = weapon.attackRate; // Set Rate to Weapon Rate
+
+        // Make visual of weapon appear in hand (will change in Alpha).
+        model.GetComponent<MeshFilter>().sharedMesh = weapon.model.GetComponent<MeshFilter>().sharedMesh; 
+        model.GetComponent<MeshRenderer>().sharedMaterial = weapon.model.GetComponent<MeshRenderer>().sharedMaterial;
+
+    }
+
+    public void Use(Consumable consumable)
+    {
+        if (health + consumable.HPGain >= maxHealth) // If the sum of HP and Gain were to exceed or meet Max HP, set HP to Max HP
+        {
+            health = maxHealth;
+        } 
+        else // Else, add Gain to HP
+        {
+            health += consumable.HPGain;
+        }
+
+        UIManager.instance.UpdateHealthBar(); // Update the Health Bar
     }
 }

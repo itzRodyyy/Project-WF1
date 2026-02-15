@@ -7,6 +7,7 @@ public class gameManager : MonoBehaviour
     public combat playerCombat;
     public movement playerMovement;
     public int gameGoalCount;
+    public PlayerInventory playerInventory;
 
     float timeScaleOriginal;
 
@@ -18,6 +19,7 @@ public class gameManager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         playerCombat = player.GetComponent<combat>();
         playerMovement = player.GetComponent<movement>();
+        playerInventory = instance.GetComponent<PlayerInventory>();
         timeScaleOriginal = Time.timeScale;
     }
     void Start()

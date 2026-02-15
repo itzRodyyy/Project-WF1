@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66913574cdbd60d4db4ba60fc9372154, type: 3}
+  m_Name: "Sword_Item \u2014 Test"
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemType: 1
+  itemName: Test Sword
+  weapon: {fileID: 11400000, guid: 913f1f784438e254794ac2731b0dd58a, type: 2}
+  consumable: {fileID: 0}
