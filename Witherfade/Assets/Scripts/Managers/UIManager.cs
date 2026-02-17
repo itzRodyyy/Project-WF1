@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject winMenu;
     [SerializeField] GameObject diedMenu;
     [SerializeField] GameObject inventory;
+    [SerializeField] GameObject playerInventory;
+    [SerializeField] GameObject chestInventory;
 
     public static UIManager instance;
     public GameObject activeMenu;
@@ -28,7 +30,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel") && activeMenu == inventory)
+        if (Input.GetButtonDown("Cancel"))
         {
             closeMenu();
         }
@@ -73,12 +75,23 @@ public class UIManager : MonoBehaviour
         HUD.SetActive(hudActive);
     }
 
-    public void openInventory()
+    public void openPlayerInventory()
     {
         gameManager.instance.statePause();
         closeMenu();
         ToggleHUD();
         activeMenu = inventory;
         activeMenu.SetActive(true);
+        chestInventory.SetActive(false);
+    }
+
+    public void OpenContainerInventory()
+    {
+        gameManager.instance.statePause();
+        closeMenu();
+        ToggleHUD();
+        activeMenu = inventory;
+        activeMenu.SetActive(true);
+        chestInventory.SetActive(true);
     }
 }

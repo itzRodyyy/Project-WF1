@@ -8,6 +8,7 @@ public class gameManager : MonoBehaviour
     public movement playerMovement;
     public int gameGoalCount;
     public PlayerInventory playerInventory;
+    public Container container;
 
     float timeScaleOriginal;
 

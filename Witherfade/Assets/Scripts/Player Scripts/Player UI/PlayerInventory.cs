@@ -17,24 +17,24 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetButtonDown("Inventory"))
         {
             Refresh();
-            UIManager.instance.openInventory();
+            UIManager.instance.openPlayerInventory();
         }
     }
 
     public void Refresh()
     {
-        if (inventory.items.Count > 0)
+        
+        foreach (Transform child in content)
         {
-            foreach (Transform child in content)
-            {
-                Destroy(child.gameObject);
-            }
-
-            foreach (Item item in inventory.items)
-            {
-                GameObject row = Instantiate(playerRowPrefab, content);
-                row.GetComponent<PlayerRow>().Setup(item);
-            }
+            Destroy(child.gameObject);
         }
+
+        foreach (Item item in inventory.items)
+        {
+            GameObject row = Instantiate(playerRowPrefab, content);
+            row.GetComponent<PlayerRow>().Setup(item);
+        }
+        
     }
+
 }

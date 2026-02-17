@@ -36,6 +36,8 @@ public class PlayerRow : MonoBehaviour
         else if (item.itemType == ItemType.Consumable)
         {
             gameManager.instance.playerCombat.Use(item.consumable);
+            gameManager.instance.playerInventory.inventory.RemoveItem(item);
+            gameManager.instance.playerInventory.Refresh();
         }
     }
 }
