@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 112}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 43496
+  controlID: 27
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 43497
+  controlID: 28
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -29.174866, y: 1.2122754, z: -20.668835}
     speed: 2
-    m_Value: {x: -29.228384, y: 1.2609092, z: -20.624453}
+    m_Value: {x: -29.174866, y: 1.2122754, z: -20.668835}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1226,11 +1226,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.22828569, y: 0.028189197, z: -0.0067958897, w: 0.9732566}
     speed: 2
-    m_Value: {x: 0.22728457, y: 0.029166762, z: -0.0069943494, w: 0.97336644}
+    m_Value: {x: -0.22828569, y: -0.028189197, z: 0.0067958897, w: -0.9732565}
   m_Size:
     m_Target: 2.3184412
     speed: 2
-    m_Value: 2.4276872
+    m_Value: 2.3184412
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1464,56 +1464,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: -186092
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: -186092
+        m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -178230
-      - m_Data: -178168
-      - m_Data: -178158
-      - m_Data: -178150
-      - m_Data: -178140
-      - m_Data: -177718
-      - m_Data: -177710
-      - m_Data: -167330
-      - m_Data: -162236
-      - m_Data: -162192
-      - m_Data: -161228
-      - m_Data: -157288
-      - m_Data: -157268
-      - m_Data: -156612
-      - m_Data: -156414
-      - m_Data: -154894
-      - m_Data: -154712
-      - m_Data: -154710
-      - m_Data: -144804
-      - m_Data: -143206
-      - m_Data: -143204
-      - m_Data: -138532
-      - m_Data: -137098
-      - m_Data: -126574
-      - m_Data: -126476
-      - m_Data: -126068
-      - m_Data: -125604
-      - m_Data: -125504
-      - m_Data: -120724
-      - m_Data: -120704
-      - m_Data: -120414
-      - m_Data: -120232
-      - m_Data: -119958
-      - m_Data: -98698
-      - m_Data: -98678
-      - m_Data: -17788
-      - m_Data: -1566
-      - m_Data: -1300
-      - m_Data: -1290
       - m_Data: -1288
-      - m_Data: 35578
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: "Test \u2014 Weapon"
-        m_OriginalName: "Test \u2014 Weapon"
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -1521,10 +1480,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: -186092
+          m_Data: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 9}
@@ -1603,18 +1562,17 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 47374
+    - m_Data: 36580
     m_LastClickedID:
-      m_Data: 47374
+      m_Data: 36580
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 36170
-    - m_Data: 36308
-    - m_Data: 36312
-    - m_Data: 36320
-    - m_Data: 36322
-    - m_Data: 36332
-    - m_Data: 47372
+    - m_Data: 36436
+    - m_Data: 36438
+    - m_Data: 36440
+    - m_Data: 36442
+    - m_Data: 36444
+    - m_Data: 36446
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1648,10 +1606,12 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 36170
-    - m_Data: 36312
-    - m_Data: 36320
-    - m_Data: 1000000000
+    - m_Data: 36436
+    - m_Data: 36438
+    - m_Data: 36440
+    - m_Data: 36442
+    - m_Data: 36444
+    - m_Data: 36446
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1678,10 +1638,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: -186092
-    m_LastClickedInstanceID: -186092
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: []
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 40100
     - m_Data: 35632
