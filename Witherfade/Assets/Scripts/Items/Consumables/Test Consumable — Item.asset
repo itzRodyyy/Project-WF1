@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: "Test \u2014 Consumable"
   weapon: {fileID: 0}
   consumable: {fileID: 11400000, guid: 474cb4b752a54bf4d9e032e6f56e006b, type: 2}
+  dropPrefab: {fileID: 6821296452161688673, guid: 4d6e35b81b80d604ab132df7b13b4c3f, type: 3}

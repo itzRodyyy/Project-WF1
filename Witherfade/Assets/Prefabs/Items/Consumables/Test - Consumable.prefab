@@ -126,5 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   type: 0
-  HPGain: 5
-  weapon: {fileID: 0}
+  item: {fileID: 11400000, guid: 0ea15edc117a4f4498517c105a6df4cb, type: 2}

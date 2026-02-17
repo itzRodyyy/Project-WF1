@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Test Sword
   weapon: {fileID: 11400000, guid: 913f1f784438e254794ac2731b0dd58a, type: 2}
   consumable: {fileID: 0}
+  dropPrefab: {fileID: 6479870658788481214, guid: d4e03e426492dbc4db97f8c92e0d5932, type: 3}

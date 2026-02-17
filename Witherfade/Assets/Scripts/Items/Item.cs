@@ -7,4 +7,5 @@ public class Item : ScriptableObject
     public string itemName;
     public Weapon weapon;
     public Consumable consumable;
+    public GameObject dropPrefab;
 }
