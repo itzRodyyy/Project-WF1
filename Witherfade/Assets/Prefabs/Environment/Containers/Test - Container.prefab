@@ -127,6 +127,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Container
   inventory: {fileID: 6421775532128464701}
+  containerName: Name
+  containerInventoryText: {fileID: 0}
+  containerRowPrefab: {fileID: 0}
+  content: {fileID: 0}
 --- !u!114 &6421775532128464701
 MonoBehaviour:
   m_ObjectHideFlags: 0
