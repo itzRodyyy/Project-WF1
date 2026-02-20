@@ -35,8 +35,8 @@ public class BreakableBarrel : MonoBehaviour, damageInterface
 
             Vector3 dropPosition = transform.position +
                 new Vector3(Random.Range(-dropRadius, dropRadius),
-                            Random.Range(-dropRadius, dropRadius),
-                            0);
+                            0,
+                            Random.Range(-dropRadius, dropRadius));
 
             Instantiate(item.dropPrefab, dropPosition, Quaternion.identity);
         }

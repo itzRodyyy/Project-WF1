@@ -26,6 +26,11 @@ public class combat : MonoBehaviour, damageInterface
         shootTimer += Time.deltaTime;
         Attack();
 
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            TakeDamage(100);
+        }
+
     }
 
     void Attack()

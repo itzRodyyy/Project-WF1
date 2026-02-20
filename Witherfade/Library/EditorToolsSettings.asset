@@ -69,5 +69,5 @@ MonoBehaviour:
     collapsed: 0
   m_LastPivotModeTypeString: UnityEditor.CenterPivotMode, UnityEditor.CoreModule,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_LastPivotRotationTypeString: UnityEditor.LocalPivotRotation, UnityEditor.CoreModule,
+  m_LastPivotRotationTypeString: UnityEditor.GlobalPivotRotation, UnityEditor.CoreModule,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
