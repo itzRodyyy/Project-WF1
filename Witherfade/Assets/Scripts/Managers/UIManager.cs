@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     bool hudActive;
 
     [Header("== Menus ==")]
+    [SerializeField] GameObject controlPopup;
     [SerializeField] GameObject winMenu;
     [SerializeField] GameObject diedMenu;
     [SerializeField] GameObject inventory;
@@ -24,7 +25,10 @@ public class UIManager : MonoBehaviour
     }
     void Start()
     {
-        hudActive = true;
+        hudActive = false;
+        gameManager.instance.statePause();
+        activeMenu = controlPopup;
+        activeMenu.SetActive(true);
     }
 
     // Update is called once per frame
